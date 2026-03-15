@@ -58,7 +58,7 @@
       }
     }
 
-    @media (max-width:991px) and (min-width:768px) {
+    @media (max-width:991px) {
       html.w-mod-js:not(.w-mod-ix) [data-w-id="53f2ddd1-278f-41eb-0b4f-2222287cfd6b"] {
         display: flex;
       }
@@ -98,6 +98,22 @@
 
       html.w-mod-js:not(.w-mod-ix) [data-w-id="53f2ddd1-278f-41eb-0b4f-2222287cfd73"] {
         display: none;
+      }
+
+      .your-profession,
+      .site-title-wrapper {
+        font-size: 30px !important;
+        line-height: 40px !important;
+      }
+
+      .links-and-menu {
+        display: flex !important;
+        flex-direction: column !important;
+      }
+
+      .subscribe-block {
+        order: -1 !important;
+        margin-bottom: 40px !important;
       }
     }
 
@@ -189,8 +205,13 @@
 
     /* Contact form responsive */
     @media screen and (max-width: 479px) {
+      #contact-us .heading-style-wrapper {
+        margin-bottom: 20px !important;
+      }
+
       #contact-us .contact-form-banner {
-        flex-direction: column !important;
+        flex-direction: column-reverse !important;
+        gap: 20px !important;
       }
 
       #contact-us .contact-form-banner>div {
@@ -199,6 +220,17 @@
 
       #contact-us [style*="grid-template-columns: 1fr 1fr"] {
         grid-template-columns: 1fr !important;
+        gap: 20px !important;
+      }
+
+      .input-field {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        height: auto !important;
+        min-height: 48px !important;
+        padding: 10px 12px !important;
+        font-size: 16px !important;
+        line-height: normal !important;
       }
     }
 
@@ -243,6 +275,88 @@
         grid-template-columns: 1fr !important;
         gap: 20px !important;
       }
+    }
+
+    #faq .dropdown-title {
+      text-align: left !important;
+      white-space: normal !important;
+      display: block !important;
+      width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    #faq .dropdown-switch {
+      justify-content: flex-start !important;
+      align-items: center !important;
+      display: flex !important;
+      text-align: left !important;
+      padding-left: 0 !important;
+    }
+    #faq .dropdown-faq-block, 
+    #faq .dropdown-wrapper, 
+    #faq .vertical-left-top {
+      text-align: left !important;
+      align-items: flex-start !important;
+      justify-content: flex-start !important;
+    }
+
+    /* Force hamburger menu icon toggle correctly */
+    .hamburger-menu {
+      position: relative !important;
+      width: 48px !important;
+      height: 48px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      align-items: center !important;
+      padding: 0 !important;
+    }
+    /* Hide hamburger on desktop */
+    @media (min-width: 992px) {
+      .hamburger-menu {
+        display: none !important;
+      }
+    }
+    .hamburger-menu .hamburger-upper-line,
+    .hamburger-menu .hamburger-middle-line,
+    .hamburger-menu .hamburger-bottom-line {
+      display: block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      width: 30px !important;
+      height: 2px !important;
+      background-color: #fff !important;
+      transition: all 0.3s ease-in-out !important;
+      transform-origin: center center !important;
+      margin: 3px 0 !important;
+    }
+    /* Cross State (When Open) */
+    .hamburger-menu.w--open .hamburger-upper-line {
+      position: absolute !important;
+      top: 50% !important;
+      left: 50% !important;
+      margin: 0 !important;
+      transform: translate(-50%, -50%) rotate(45deg) !important;
+    }
+    .hamburger-menu.w--open .hamburger-middle-line {
+      opacity: 0 !important;
+      transform: scale(0) !important;
+    }
+    .hamburger-menu.w--open .hamburger-bottom-line {
+      position: absolute !important;
+      top: 50% !important;
+      left: 50% !important;
+      margin: 0 !important;
+      transform: translate(-50%, -50%) rotate(-45deg) !important;
+    }
+    /* Hamburger State (When Closed) */
+    .hamburger-menu:not(.w--open) .hamburger-upper-line,
+    .hamburger-menu:not(.w--open) .hamburger-middle-line,
+    .hamburger-menu:not(.w--open) .hamburger-bottom-line {
+      position: static !important;
+      transform: none !important;
+      margin: 3px 0 !important;
+      opacity: 1 !important;
     }
   </style>
 
@@ -403,7 +517,7 @@
                 </div>
               </li>
               <li class="nav-list">
-                <a href="#contact" style="background-color: white; color: black; padding: 10px 24px; border-radius: 4px; text-decoration: none; font-size: 14px; font-weight: 700; margin-left: 15px; display: inline-block;">
+                <a href="#contact-us" style="background-color: white; color: black; padding: 10px 24px; border-radius: 4px; text-decoration: none; font-size: 14px; font-weight: 700; margin-left: 15px; display: inline-block;">
                   Contact
                 </a>
               </li>
@@ -481,13 +595,13 @@
               </p>
               <div class="margin-top-40px">
                 <a class="secondary-button w-inline-block" data-w-id="3076283e-6351-ff66-5ab6-2630d8b3ebe5"
-                  href="#contact">
+                  href="#contact-us">
                   <div class="button-text-wrapper">
                     <div class="default-text">
                       Contact Now
                     </div>
                     <div class="hover-text black-hover-text">
-                      Button Text
+                      Get In Touch
                     </div>
                   </div>
                   <div class="hover-color white">
@@ -650,7 +764,7 @@
               Traditional skills meet modern convenience in a clean, professional setup. I arrive on time, get to work,
               and get you back to your day looking your absolute best.
             </p>
-            <a class="secondary-button w-inline-block" data-w-id="3076283e-6351-ff66-5ab6-2630d8b3ebe5" href="#contact">
+            <a class="secondary-button w-inline-block" data-w-id="3076283e-6351-ff66-5ab6-2630d8b3ebe5" href="#contact-us">
               <div class="button-text-wrapper">
                 <div class="default-text">
                   Contact Now
@@ -1177,13 +1291,13 @@
         </div>
         <div class="margin-top-40px" data-w-id="616a566f-eefc-4b94-97d2-cb58972f909f"
           style="opacity:0;-webkit-transform:translate3d(null, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)">
-          <a class="secondary-button w-inline-block" data-w-id="3076283e-6351-ff66-5ab6-2630d8b3ebe5" href="#pricing">
+          <a class="secondary-button w-inline-block" data-w-id="3076283e-6351-ff66-5ab6-2630d8b3ebe5" href="#contact-us">
             <div class="button-text-wrapper">
               <div class="default-text">
-                See Our Pricing
+                Book Your Service
               </div>
               <div class="hover-text black-hover-text">
-                Visit Pricing Page
+                Book Now
               </div>
             </div>
             <div class="hover-color white">
@@ -1442,13 +1556,13 @@
               </h2>
             </div>
           </div>
-          <a class="secondary-button w-inline-block" data-w-id="3076283e-6351-ff66-5ab6-2630d8b3ebe5" href="#styles">
+          <a class="secondary-button w-inline-block" data-w-id="3076283e-6351-ff66-5ab6-2630d8b3ebe5" href="#contact-us">
             <div class="button-text-wrapper">
               <div class="default-text">
-                View Projects
+                Book This Look
               </div>
               <div class="hover-text black-hover-text">
-                View All Now
+                Contact Now
               </div>
             </div>
             <div class="hover-color white">
@@ -2033,9 +2147,7 @@
             <div class="dropdown-faq-block w-dropdown" data-delay="0" data-hover="false"
               data-w-id="71064370-b187-8fee-5f1a-d2f5b6a97c80">
               <div class="dropdown-switch w-dropdown-toggle">
-                <div class="dropdown-title">
-                  How do I book an appointment with Mobile Barber LLC?
-                </div>
+                <div class="dropdown-title">How do I book an appointment with Mobile Barber LLC?</div>
                 <div class="faq-icon-plus-minus">
                   <div class="faq-icon-1">
                   </div>
@@ -2074,10 +2186,8 @@
             </div>
             <div class="dropdown-faq-block w-dropdown" data-delay="0" data-hover="false"
               data-w-id="71064370-b187-8fee-5f1a-d2f5b6a97c80">
-              <div class="dropdown-switch w-dropdown-toggle">
-                <div class="dropdown-title">
-                  Can I walk in for a service, or do I need an appointment?
-                </div>
+              <div class="dropdown-switch w-dropdown-toggle" style="text-align: left !important;">
+                <div class="dropdown-title">Can I cancel or reschedule my appointment?</div>
                 <div class="faq-icon-plus-minus">
                   <div class="faq-icon-1">
                   </div>
@@ -2096,10 +2206,8 @@
             </div>
             <div class="dropdown-faq-block w-dropdown" data-delay="0" data-hover="false"
               data-w-id="71064370-b187-8fee-5f1a-d2f5b6a97c80">
-              <div class="dropdown-switch w-dropdown-toggle">
-                <div class="dropdown-title">
-                  What are your operating hours?
-                </div>
+              <div class="dropdown-switch w-dropdown-toggle" style="text-align: left !important;">
+                <div class="dropdown-title">What areas do you provide mobile barber services in?</div>
                 <div class="faq-icon-plus-minus">
                   <div class="faq-icon-1">
                   </div>
@@ -2120,10 +2228,8 @@
             style="opacity:0;-webkit-transform:translate3d(null, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)">
             <div class="dropdown-faq-block w-dropdown" data-delay="0" data-hover="false"
               data-w-id="71064370-b187-8fee-5f1a-d2f5b6a97c80">
-              <div class="dropdown-switch w-dropdown-toggle">
-                <div class="dropdown-title">
-                  Do you offer services for children?
-                </div>
+              <div class="dropdown-switch w-dropdown-toggle" style="text-align: left !important;">
+                <div class="dropdown-title">Do you offer discounts for group bookings or events?</div>
                 <div class="faq-icon-plus-minus">
                   <div class="faq-icon-1">
                   </div>
@@ -2142,10 +2248,8 @@
             </div>
             <div class="dropdown-faq-block w-dropdown" data-delay="0" data-hover="false"
               data-w-id="71064370-b187-8fee-5f1a-d2f5b6a97c80">
-              <div class="dropdown-switch w-dropdown-toggle">
-                <div class="dropdown-title">
-                  What payment methods do you accept?
-                </div>
+              <div class="dropdown-switch w-dropdown-toggle" style="text-align: left !important;">
+                <div class="dropdown-title">What types of payment do you accept?</div>
                 <div class="faq-icon-plus-minus">
                   <div class="faq-icon-1">
                   </div>
@@ -2164,10 +2268,8 @@
             </div>
             <div class="dropdown-faq-block w-dropdown" data-delay="0" data-hover="false"
               data-w-id="71064370-b187-8fee-5f1a-d2f5b6a97c80">
-              <div class="dropdown-switch w-dropdown-toggle">
-                <div class="dropdown-title">
-                  What is your cancellation policy?
-                </div>
+              <div class="dropdown-switch w-dropdown-toggle" style="text-align: left !important;">
+                <div class="dropdown-title">How far in advance should I book?</div>
                 <div class="faq-icon-plus-minus">
                   <div class="faq-icon-1">
                   </div>
@@ -2185,10 +2287,8 @@
             </div>
             <div class="dropdown-faq-block w-dropdown" data-delay="0" data-hover="false"
               data-w-id="71064370-b187-8fee-5f1a-d2f5b6a97c80">
-              <div class="dropdown-switch w-dropdown-toggle">
-                <div class="dropdown-title">
-                  Do you charge travel fees?
-                </div>
+              <div class="dropdown-switch w-dropdown-toggle" style="text-align: left !important;">
+                <div class="dropdown-title">Do you charge travel fees?</div>
                 <div class="faq-icon-plus-minus">
                   <div class="faq-icon-1">
                   </div>
@@ -2726,7 +2826,28 @@ $(document).ready(function() {
         function() { timer = setInterval(nextTab, tabDuration); }
     );
 });
-</script>
+    // Automatic Start/Reload and Scroll Control
+    window.addEventListener('load', function() {
+        // Task 2: Ensure any stuck loaders disappear
+        setTimeout(function() {
+            var loader = document.querySelector('.loader');
+            if (loader && window.getComputedStyle(loader).display !== 'none') {
+                loader.style.opacity = '0';
+                setTimeout(function() { loader.style.display = 'none'; }, 500);
+            }
+        }, 1500);
+    });
+
+    // Task 3: Disable automatic scroll restoration on reload
+    if (history.scrollRestoration) {
+        history.scrollRestoration = 'manual';
+    }
+
+    // If there's no hash, ensure we are at the top only on fresh loads
+    if (!window.location.hash && performance.navigation.type !== 1) {
+        window.scrollTo(0, 0);
+    }
+  </script>
 </body>
 
 </html>
