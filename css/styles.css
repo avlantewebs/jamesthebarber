@@ -9135,7 +9135,12 @@ blockquote {
 
 
 /* Testimonial slider layout changes */
-.testimonial-tab.w-tabs { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.testimonial-tab.w-tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .testimonial-tab-menu {
     display: flex !important;
