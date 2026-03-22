@@ -409,40 +409,32 @@
   letter-spacing: 0.3px;
   }
 
-  .cta-stats-row {
+  .cta-features {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
   margin-bottom: 50px;
+  flex-wrap: wrap;
   }
 
-  .cta-stat-item {
-  text-align: center;
+  .cta-feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   }
 
-  .cta-stat-number {
-  font-family: 'Andada Pro', serif;
-  font-size: 42px;
-  font-weight: 800;
+  .cta-feature-icon {
   color: #ff1d46;
-  line-height: 1.1;
-  margin-bottom: 6px;
+  font-size: 24px;
   }
 
-  .cta-stat-label {
-  font-family: 'Nunito', sans-serif;
+  .cta-feature-text {
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  font-weight: 600;
-  color: #aaa;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  }
-
-  .cta-stat-divider {
-  width: 1px;
-  height: 50px;
-  background: linear-gradient(180deg, transparent, #ff1d46, transparent);
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.5px;
   }
 
   .cta-buttons-wrapper {
@@ -466,22 +458,9 @@
     margin-bottom: 35px;
   }
 
-  .cta-stats-row {
-    gap: 25px;
-    margin-bottom: 35px;
-  }
-
-  .cta-stat-number {
-    font-size: 32px;
-  }
-
-  .cta-stat-label {
-    font-size: 12px;
-    letter-spacing: 1px;
-  }
-
-  .cta-stat-divider {
-    height: 40px;
+  .cta-features {
+  gap: 25px;
+  margin-bottom: 35px;
   }
   }
 
@@ -490,22 +469,9 @@
       padding: 50px 0;
     }
 
-    .cta-stats-row {
-      gap: 15px;
-    }
-
-    .cta-stat-number {
-      font-size: 26px;
-    }
-
-    .cta-stat-label {
-      font-size: 11px;
-      letter-spacing: 0.5px;
-    }
-
-    .cta-stat-divider {
-      height: 30px;
-    }
+  .cta-features {
+  gap: 15px;
+  }
 
     .cta-buttons-wrapper {
       flex-direction: column;
@@ -2333,20 +2299,18 @@
           Whether it's a sharp fade, a classic cut, or a clean beard trim — I bring the barbershop to you.
         </p>
 
-        <div class="cta-stats-row" data-aos="fade-up" data-aos-delay="200">
-          <div class="cta-stat-item">
-            <div class="cta-stat-number">5★</div>
-            <div class="cta-stat-label">Google Rating</div>
+        <div class="cta-features" data-aos="fade-up" data-aos-delay="200">
+          <div class="cta-feature">
+            <span class="cta-feature-icon material-icons">schedule</span>
+            <span class="cta-feature-text">Flexible Scheduling</span>
           </div>
-          <div class="cta-stat-divider"></div>
-          <div class="cta-stat-item">
-            <div class="cta-stat-number">100%</div>
-            <div class="cta-stat-label">Mobile Service</div>
+          <div class="cta-feature">
+            <span class="cta-feature-icon material-icons">home</span>
+            <span class="cta-feature-text">We Come to You</span>
           </div>
-          <div class="cta-stat-divider"></div>
-          <div class="cta-stat-item">
-            <div class="cta-stat-number">252</div>
-            <div class="cta-stat-label">Area Code</div>
+          <div class="cta-feature">
+            <span class="cta-feature-icon material-icons">star</span>
+            <span class="cta-feature-text">5-Star Service</span>
           </div>
         </div>
 
