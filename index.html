@@ -372,245 +372,157 @@
       opacity: 1 !important;
     }
 
-    /* CTA Section Styles */
-    .cta-section {
-      position: relative;
-      padding: 100px 0;
-      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
-      overflow: hidden;
-    }
+  /* ===== CTA SECTION STYLES ===== */
+  .cta-section {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+  background-image:
+    linear-gradient(180deg, black, rgba(0, 0, 0, 0.75) 30%, rgba(0, 0, 0, 0.75) 70%, black),
+    url(images/6649afea6fc799b3dafba75e_10150.webp);
+  background-position: 0 0, 50% 50%;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  background-attachment: scroll, fixed;
+  }
 
-    .cta-section::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: 
-        radial-gradient(ellipse at 20% 50%, rgba(255, 29, 70, 0.08) 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 50%, rgba(255, 29, 70, 0.05) 0%, transparent 50%);
-      pointer-events: none;
-    }
+  .cta-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(255, 29, 70, 0.08) 0%, transparent 70%);
+  z-index: 1;
+  pointer-events: none;
+  }
 
-    .cta-section::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(255, 29, 70, 0.3), transparent);
-    }
+  .cta-content-wrapper {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto;
+  }
 
-    .cta-container {
-      position: relative;
-      z-index: 1;
-    }
+  .cta-description {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ddd;
+  margin-bottom: 50px;
+  letter-spacing: 0.3px;
+  }
 
-    .cta-content {
-      text-align: center;
-      max-width: 800px;
-      margin: 0 auto;
-    }
+  .cta-stats-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 50px;
+  }
 
-    .cta-badge {
-      display: inline-block;
-      margin-bottom: 30px;
-    }
+  .cta-stat-item {
+  text-align: center;
+  }
 
-    .cta-badge-text {
-      display: inline-block;
-      padding: 10px 24px;
-      background: rgba(255, 29, 70, 0.1);
-      border: 1px solid rgba(255, 29, 70, 0.3);
-      border-radius: 30px;
-      color: #ff1d46;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
+  .cta-stat-number {
+  font-family: 'Andada Pro', serif;
+  font-size: 42px;
+  font-weight: 800;
+  color: #ff1d46;
+  line-height: 1.1;
+  margin-bottom: 6px;
+  }
 
-    .cta-heading {
-      font-family: 'Andada Pro', serif;
-      font-size: 48px;
-      font-weight: 700;
-      color: #fff;
-      line-height: 1.2;
-      margin-bottom: 0;
-    }
+  .cta-stat-label {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  }
 
-    .cta-description {
-      font-family: 'Nunito', sans-serif;
-      font-size: 18px;
-      color: #999;
-      line-height: 1.8;
-      margin: 30px auto;
-      max-width: 600px;
-    }
+  .cta-stat-divider {
+  width: 1px;
+  height: 50px;
+  background: linear-gradient(180deg, transparent, #ff1d46, transparent);
+  }
 
-    .cta-features {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      margin: 40px 0;
-      flex-wrap: wrap;
-    }
+  .cta-buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  }
 
-    .cta-feature {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
+  /* Responsive */
+  @media screen and (max-width: 767px) {
+  .cta-section {
+    padding: 70px 0;
+    background-attachment: scroll, scroll;
+  }
 
-    .cta-feature-icon {
-      color: #ff1d46;
-      font-size: 24px;
-    }
+  .cta-description {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 35px;
+  }
 
-    .cta-feature-text {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 14px;
-      font-weight: 500;
-      color: #fff;
-      letter-spacing: 0.5px;
-    }
+  .cta-stats-row {
+    gap: 25px;
+    margin-bottom: 35px;
+  }
 
-    .cta-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin: 40px 0 30px;
-      flex-wrap: wrap;
-    }
+  .cta-stat-number {
+    font-size: 32px;
+  }
 
-    .cta-primary-button {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 18px 40px;
-      background: #ff1d46;
-      color: #fff;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      text-decoration: none;
-      border: 2px solid #ff1d46;
-      transition: all 0.3s ease;
-    }
+  .cta-stat-label {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
 
-    .cta-primary-button:hover {
-      background: transparent;
-      color: #ff1d46;
-      transform: translateY(-2px);
-      box-shadow: 0 10px 30px rgba(255, 29, 70, 0.3);
-    }
+  .cta-stat-divider {
+    height: 40px;
+  }
+  }
 
-    .cta-primary-button .cta-button-icon {
-      font-size: 18px;
-      transition: transform 0.3s ease;
-    }
+  @media screen and (max-width: 479px) {
+  .cta-section {
+    padding: 50px 0;
+  }
 
-    .cta-primary-button:hover .cta-button-icon {
-      transform: translateX(5px);
-    }
+  .cta-stats-row {
+    gap: 15px;
+  }
 
-    .cta-secondary-button {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 18px 40px;
-      background: transparent;
-      color: #fff;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      text-decoration: none;
-      border: 2px solid rgba(255, 255, 255, 0.3);
-      transition: all 0.3s ease;
-    }
+  .cta-stat-number {
+    font-size: 26px;
+  }
 
-    .cta-secondary-button:hover {
-      border-color: #fff;
-      background: rgba(255, 255, 255, 0.05);
-      transform: translateY(-2px);
-    }
+  .cta-stat-label {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+  }
 
-    .cta-secondary-button .cta-button-icon {
-      font-size: 18px;
-    }
+  .cta-stat-divider {
+    height: 30px;
+  }
 
-    .cta-guarantee {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-family: 'Nunito', sans-serif;
-      font-size: 14px;
-      color: #666;
-      margin-top: 10px;
-    }
+  .cta-buttons-wrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
 
-    .cta-guarantee-icon {
-      color: #4CAF50;
-      font-size: 18px;
-    }
+  .cta-buttons-wrapper .primary-button,
+  .cta-buttons-wrapper .secondary-button {
+    width: 100%;
+  }
 
-    @media screen and (max-width: 991px) {
-      .cta-section {
-        padding: 80px 0;
-      }
-
-      .cta-heading {
-        font-size: 36px;
-      }
-
-      .cta-features {
-        gap: 25px;
-      }
-    }
-
-    @media screen and (max-width: 479px) {
-      .cta-section {
-        padding: 60px 0;
-      }
-
-      .cta-heading {
-        font-size: 28px;
-      }
-
-      .cta-description {
-        font-size: 16px;
-        padding: 0 15px;
-      }
-
-      .cta-features {
-        flex-direction: column;
-        gap: 15px;
-      }
-
-      .cta-buttons {
-        flex-direction: column;
-        padding: 0 20px;
-      }
-
-      .cta-primary-button,
-      .cta-secondary-button {
-        width: 100%;
-        justify-content: center;
-        padding: 16px 30px;
-      }
-
-      .cta-badge-text {
-        font-size: 11px;
-        padding: 8px 18px;
-      }
-    }
+  .cta-description {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  }
   </style>
 
 
@@ -2423,18 +2335,18 @@
 
         <div class="cta-stats-row" data-aos="fade-up" data-aos-delay="200">
           <div class="cta-stat-item">
-            <div class="cta-stat-number">Flexible Scheduling</div>
-            <div class="cta-stat-label">Home</div>
+            <div class="cta-stat-number">5★</div>
+            <div class="cta-stat-label">Google Rating</div>
           </div>
           <div class="cta-stat-divider"></div>
           <div class="cta-stat-item">
-            <div class="cta-stat-number">We Come to You</div>
-            <div class="cta-stat-label">Star</div>
+            <div class="cta-stat-number">100%</div>
+            <div class="cta-stat-label">Mobile Service</div>
           </div>
           <div class="cta-stat-divider"></div>
           <div class="cta-stat-item">
-            <div class="cta-stat-number">5-Star Service</div>
-            <div class="cta-stat-label"></div>
+            <div class="cta-stat-number">252</div>
+            <div class="cta-stat-label">Area Code</div>
           </div>
         </div>
 
@@ -2453,11 +2365,6 @@
             </div>
             <div class="hover-color white"></div>
           </a>
-        </div>
-
-        <div style="display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 20px; font-family: 'Montserrat', sans-serif; font-size: 14px; color: #999;">
-          <span class="material-icons" style="font-size: 18px; color: #4CAF50;">verified</span>
-          100% Satisfaction Guaranteed
         </div>
       </div>
     </div>
