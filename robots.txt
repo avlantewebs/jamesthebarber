@@ -27,8 +27,8 @@ User-agent: SemrushBot
 Allow: /
 
 # Sitemap location
-Sitemap: https://jamesthebarber.com/sitemap.xml
-Sitemap: https://www.jamesthebarber.com/sitemap.xml
+Sitemap: https://bookthemobilebarber.com/sitemap.xml
+Sitemap: https://www.bookthemobilebarber.com/sitemap.xml
 
 # Cache directives
 # This tells crawlers to re-visit the site regularly
