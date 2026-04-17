@@ -12,7 +12,7 @@
 1. Go to: https://search.google.com/search-console/
 2. Click "Start now" 
 3. Choose "URL prefix" 
-4. Enter: `https://jamesthebarber.com`
+4. Enter: `https://bookthemobilebarber.com`
 5. Click "Verify" 
 6. Choose **DNS method** (easiest):
    - Copy the TXT record
@@ -20,7 +20,7 @@
    - Add TXT record to DNS
    - Wait 5-10 minutes for verification
 7. Once verified, go to Sitemaps → Submit
-8. Enter: `https://jamesthebarber.com/sitemap.xml`
+8. Enter: `https://bookthemobilebarber.com/sitemap.xml`
 9. Click Submit
 10. Wait for indexing notification
 
@@ -35,11 +35,11 @@
 2. Click "Sign in with Microsoft"
 3. Sign in with your Microsoft/Outlook account
 4. Add Site
-5. Enter: `https://jamesthebarber.com`
+5. Enter: `https://bookthemobilebarber.com`
 6. Choose verification method (DNS or HTML file)
 7. Complete verification
 8. Go to Sitemaps
-9. Enter: `https://jamesthebarber.com/sitemap.xml`
+9. Enter: `https://bookthemobilebarber.com/sitemap.xml`
 10. Click Add
 
 **Why**: Bing has 20-30% search market share. Don't ignore it.
@@ -52,7 +52,7 @@
 1. Go to: https://analytics.google.com/
 2. Click "+ Create"
 3. Choose "Web"
-4. Enter your website URL: `jamesthebarber.com`
+4. Enter your website URL: `bookthemobilebarber.com`
 5. Follow the setup wizard
 6. Copy the tracking code
 7. Paste it in your `<head>` section of index.html before `</head>`
@@ -73,7 +73,7 @@
 6. Enter service area: Rocky Mount, Greenville, Wilson, Tarboro
 7. Add phone number
 8. Add address (or service area if no storefront)
-9. Add website: `https://jamesthebarber.com`
+9. Add website: `https://bookthemobilebarber.com`
 10. Complete verification (postcard or phone)
 11. Upload 5-10 service photos
 12. Add business hours
