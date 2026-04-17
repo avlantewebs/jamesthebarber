@@ -12,12 +12,12 @@ Allow: /
 Crawl-delay: 0
 
 # Contact information for LLM-related issues
-Contact: james@jamesthebarber.com
+Contact: aidensdad111@gmail.com
 
 # Website information
 Name: Mobile Barber LLC
 Description: Professional mobile barber services in Rocky Mount, Greenville, Wilson & Tarboro, North Carolina. Specializing in skin fades, precision haircuts, and beard grooming.
-Url: https://jamesthebarber.com
+Url: https://bookthemobilebarber.com
 
 # Business type
 Business: Mobile Barber Service
