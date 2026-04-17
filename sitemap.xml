@@ -5,7 +5,7 @@
   
   <!-- Homepage - Update priority -->
   <url>
-    <loc>https://jamesthebarber.com/</loc>
+    <loc>https://bookthemobilebarber.com/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -13,7 +13,7 @@
 
   <!-- Blog Index -->
   <url>
-    <loc>https://jamesthebarber.com/blog/</loc>
+    <loc>https://bookthemobilebarber.com/blog/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -21,41 +21,41 @@
 
   <!-- Blog Articles -->
   <url>
-    <loc>https://jamesthebarber.com/blog/mobile-barber-benefits.html</loc>
+    <loc>https://bookthemobilebarber.com/blog/mobile-barber-benefits.html</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://jamesthebarber.com/images/blog/mobile-barber-hero.jpg</image:loc>
+      <image:loc>https://bookthemobilebarber.com/images/blog/mobile-barber-hero.jpg</image:loc>
       <image:title>5 Benefits of Hiring a Mobile Barber for At-Home Haircuts</image:title>
     </image:image>
   </url>
 
   <url>
-    <loc>https://jamesthebarber.com/blog/low-taper-fade-guide.html</loc>
+    <loc>https://bookthemobilebarber.com/blog/low-taper-fade-guide.html</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://jamesthebarber.com/images/blog/low-taper-fade-hero.jpg</image:loc>
+      <image:loc>https://bookthemobilebarber.com/images/blog/low-taper-fade-hero.jpg</image:loc>
       <image:title>Complete Guide to Low Taper Fade Haircuts</image:title>
     </image:image>
   </url>
 
   <url>
-    <loc>https://jamesthebarber.com/blog/beard-grooming-guide.html</loc>
+    <loc>https://bookthemobilebarber.com/blog/beard-grooming-guide.html</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://jamesthebarber.com/images/blog/beard-grooming-hero.jpg</image:loc>
+      <image:loc>https://bookthemobilebarber.com/images/blog/beard-grooming-hero.jpg</image:loc>
       <image:title>Complete Beard Grooming and Care Guide</image:title>
     </image:image>
   </url>
 
   <!-- Service Pages (implied from index) -->
   <url>
-    <loc>https://jamesthebarber.com/index.html</loc>
+    <loc>https://bookthemobilebarber.com/index.html</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
