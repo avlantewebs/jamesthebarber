@@ -42,7 +42,7 @@
 - ✅ **Meta Title**: Optimized with keywords and company name
 - ✅ **Meta Description**: Compelling with CTA and local keywords
 - ✅ **Meta Keywords**: Comprehensive keyword list covering services and locations
-- ✅ **Canonical URL**: https://jamesthebarber.com/
+- ✅ **Canonical URL**: https://bookthemobilebarber.com/
 - ✅ **Viewport Tag**: Mobile-responsive settings
 - ✅ **Robots Meta**: "index, follow" - pages will be indexed
 
@@ -153,7 +153,7 @@ All images have recommended alt text including:
 
 **To Complete Bing Visibility:**
 1. Go to https://www.bing.com/webmasters
-2. Add your domain: jamesthebarber.com
+2. Add your domain: bookthemobilebarber.com
 3. Verify ownership
 4. Submit sitemap.xml
 5. Monitor in Bing Webmaster Tools
@@ -196,11 +196,11 @@ All images have recommended alt text including:
 ### ✅ **8. Canonicalization** (100% Complete)
 
 **Canonical URLs Implemented On:**
-- ✅ Homepage: https://jamesthebarber.com/
-- ✅ Blog Index: https://jamesthebarber.com/blog/
-- ✅ Blog Article 1: https://jamesthebarber.com/blog/mobile-barber-benefits.html
-- ✅ Blog Article 2: https://jamesthebarber.com/blog/low-taper-fade-guide.html
-- ✅ Blog Article 3: https://jamesthebarber.com/blog/beard-grooming-guide.html
+- ✅ Homepage: https://bookthemobilebarber.com/
+- ✅ Blog Index: https://bookthemobilebarber.com/blog/
+- ✅ Blog Article 1: https://bookthemobilebarber.com/blog/mobile-barber-benefits.html
+- ✅ Blog Article 2: https://bookthemobilebarber.com/blog/low-taper-fade-guide.html
+- ✅ Blog Article 3: https://bookthemobilebarber.com/blog/beard-grooming-guide.html
 
 **Purpose**: Prevents duplicate content issues and consolidates ranking signals.
 
@@ -262,7 +262,7 @@ Created comprehensive guides for ongoing optimization:
 ### **Immediate (This Week)**
 1. ✅ **Verify with Google Search Console** (CRITICAL)
    - Go to https://search.google.com/search-console/
-   - Add property: https://jamesthebarber.com
+   - Add property: https://bookthemobilebarber.com
    - Verify ownership (DNS or HTML file method recommended)
    - Submit sitemap.xml
    - Check for any crawl errors
