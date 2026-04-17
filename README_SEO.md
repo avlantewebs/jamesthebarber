@@ -95,7 +95,7 @@
 
 ### **Most Important - Verify with Google** (5 minutes)
 1. Go to https://search.google.com/search-console/
-2. Add property: `https://jamesthebarber.com`
+2. Add property: `https://bookthemobilebarber.com`
 3. Verify via DNS or HTML file
 4. Submit sitemap: `/sitemap.xml`
 
