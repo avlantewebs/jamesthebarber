@@ -37,7 +37,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta property="og:description" content="Professional mobile barber serving Rocky Mount, Greenville, Wilson & Tarboro NC. Expert skin fades, precision haircuts & beard grooming delivered to your door." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://bookthemobilebarber.com/" />
-  <meta property="og:image" content="https://bookthemobilebarber.com/images/barber-logo.png" />
+  <meta property="og:image" content="https://bookthemobilebarber.com/images/james-mobile-barber-og.webp" />
   <meta property="og:image:alt" content="Mobile Barber LLC Logo" />
   <meta property="og:site_name" content="Mobile Barber LLC" />
   
@@ -45,65 +45,139 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Mobile Barber Rocky Mount NC - Home Haircuts & Beard Trims" />
   <meta name="twitter:description" content="Professional mobile barber service in Rocky Mount, Greenville, Wilson & Tarboro NC. Book your at-home haircut today!" />
-  <meta name="twitter:image" content="https://bookthemobilebarber.com/images/barber-logo.png" />
+  <meta name="twitter:image" content="https://bookthemobilebarber.com/images/james-mobile-barber-og.webp" />
   <meta name="twitter:image:alt" content="Mobile Barber LLC" />
   
   <!-- Local Business Schema Markup -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Mobile Barber LLC",
-    "description": "Professional mobile barber services providing at-home haircuts and beard grooming",
-    "url": "https://bookthemobilebarber.com",
-    "telephone": "+1-919-809-0529",
-    "areaServed": [
+ <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarberShop",
+  "name": "Mobile Barber LLC",
+  "description": "Professional mobile barber serving Rocky Mount, Greenville, Wilson & Tarboro NC. Expert skin fades, precision haircuts & beard grooming delivered to your door.",
+  "url": "https://bookthemobilebarber.com",
+  "telephone": "+1-919-809-0529",
+  "email": "aidensdad111@gmail.com",
+  "priceRange": "$$",
+  "image": "https://bookthemobilebarber.com/images/james-mobile-barber.webp",
+  "logo": "https://bookthemobilebarber.com/images/mobile-barber-logo.png",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Rocky Mount",
+    "addressRegion": "NC",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "35.9382",
+    "longitude": "-77.7905"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Monday",
+      "opens": "11:00",
+      "closes": "16:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Tuesday", "Wednesday"],
+      "opens": "12:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Thursday", "Friday"],
+      "opens": "11:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "12:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "13:00",
+      "closes": "18:00"
+    }
+  ],
+  "areaServed": [
+    {"@type": "City", "name": "Rocky Mount", "addressRegion": "NC"},
+    {"@type": "City", "name": "Greenville", "addressRegion": "NC"},
+    {"@type": "City", "name": "Wilson", "addressRegion": "NC"},
+    {"@type": "City", "name": "Tarboro", "addressRegion": "NC"}
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Mobile Barber Services",
+    "itemListElement": [
       {
-        "@type": "City",
-        "name": "Rocky Mount",
-        "state": "NC"
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Precision Haircut",
+          "description": "Professional men's haircut at your location"
+        },
+        "price": "25",
+        "priceCurrency": "USD"
       },
       {
-        "@type": "City",
-        "name": "Greenville",
-        "state": "NC"
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Skin Fade / Low Taper Fade",
+          "description": "Expert skin fade and taper fade haircut"
+        },
+        "price": "30",
+        "priceCurrency": "USD"
       },
       {
-        "@type": "City",
-        "name": "Wilson",
-        "state": "NC"
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Haircut & Beard Trim Combo",
+          "description": "Complete grooming package with haircut and beard trim"
+        },
+        "price": "50",
+        "priceCurrency": "USD"
       },
       {
-        "@type": "City",
-        "name": "Tarboro",
-        "state": "NC"
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Kids Haircut",
+          "description": "Professional children's haircut at home"
+        },
+        "price": "25",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Executive Mobile Grooming",
+          "description": "Premium at-home grooming package"
+        },
+        "price": "65",
+        "priceCurrency": "USD"
       }
-    ],
-    "priceRange": "$",
-    "image": "https://bookthemobilebarber.com/images/barber-logo.png",
-    "sameAs": [
-      "https://www.facebook.com/JamesThebarber26",
-      "https://www.instagram.com/jamesthebarber26"
-    ],
-    "serviceType": "Barbering"
-  }
-  </script>
-  
-  <!-- Organization Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Mobile Barber LLC",
-    "url": "https://bookthemobilebarber.com",
-    "logo": "https://bookthemobilebarber.com/images/barber-logo.png",
-    "description": "Professional mobile barber service in North Carolina offering skin fades, haircuts, and beard grooming",
-    "sameAs": [
-      "https://www.facebook.com/JamesThebarber26",
-      "https://www.instagram.com/jamesthebarber26"
     ]
-  }
-  </script>
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "9",
+    "bestRating": "5"
+  },
+  "sameAs": [
+    "https://www.facebook.com/JamesThebarber26",
+    "https://www.instagram.com/jamesthebarber26"
+  ]
+}
+</script>
   
   <!-- Additional SEO Meta Tags -->
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
